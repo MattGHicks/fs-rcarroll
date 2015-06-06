@@ -17,8 +17,14 @@ rock_or_rap = raw_input("Which do you like better? 'rock' or 'rap':  ")
 
 allies = ["Bohemoths" , "Grunts" , "Redshirts" , "Scallywags"]
 
+#Dictionary
+
 artists = dict()
-artists = {"rap":"Biggie Smalls", "rock":"Rage Against The Machine"}
+artists = {"rap":"PDiddy", "rock":"Rage Against The Machine"}
+
+
+#Function
+
 
 #Print Statements
 
@@ -57,6 +63,36 @@ elif rock_or_rap == str("rock"):
 	print artists["rock"] + " begins to play on the radio."	
 else:
 	print "You concentrate in silence while approaching the colony."
+
+
+
+#Loop
+
+print ""
+print "WARNING YOU HAVE ARRIVED AT THE ENEMY STRONGHLOD"
+fire_amount = int(raw_input("How many times do you wish to fire?  "))
+fire_damage= int(raw_input("How much damage do your rockets do? '1-20'  "))
+raw_input("Press ENTER to begin firing!!!")
+
+i = 0
+while i<fire_amount:
+	print "-8-8-8-8-8-8-PEW-8-8-8-8-8-8-"
+	i = i+1
+
+def damageCaused():
+	total_damage = fire_amount * fire_damage
+	return total_damage
+
+dmg = damageCaused();
+
+print str(dmg)
+
+
+
+
+
+
+
 
 
 
