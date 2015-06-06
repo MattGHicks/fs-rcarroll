@@ -1,1 +1,9 @@
-print "test"
+#Input Variables
+nick_name = raw_input("Give us your nick name:  ")
+weapon = raw_input("Name a deadly weapon of choice:  ")
+faction = raw_input("Name your faction:  ")
+
+
+
+print "Welcome to the battle for the universe."
+print nick_name + ", we are all counting on you as the leader of the " + faction + " to save the world from the grips of the menacing robots."
