@@ -37,7 +37,7 @@ print "I pray that you have brought your trusty " + weapon + " with you."
 print ""
 print "The robots are spreading through the universe at a rapid pace and "
 print "will soon take over your beloved " + homeland + ". You only have "
-print "approximately " + str(minute1*minute2 ) + " minutes."
+print "approximately " + str(minute1*minute2 ) + " minutes to save your people."
 print ""
 print "Seeming as you are " + str(2943-born) + " years old, you must use "
 print "your wisdom against the new generation of deadly robot machines."
@@ -83,7 +83,7 @@ while i<fire_amount:
 
 #Function
 
-def damageCaused(fire_amount, fire_damage):
+def damageCaused():
 	total_damage = fire_amount * fire_damage
 	return total_damage
 
@@ -94,6 +94,8 @@ print "You have destroyed " + str(dmg*1000) + " robots."
 print ""
 print "By destroying enough robots......."
 print "YOU HAVE SAVED THE EARTH!!!!!!"
+print ""
+
 
 
 
