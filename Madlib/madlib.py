@@ -1,6 +1,7 @@
 print ""
 print ""
 
+
 #Input Variables
 
 nick_name = raw_input("Give us your nick name:  ")
@@ -13,17 +14,16 @@ born = int(raw_input("What year were you born:  "))
 odd_or_even = raw_input("Pick 'odd' or 'even':  ")
 rock_or_rap = raw_input("Which do you like better? 'rock' or 'rap':  ")
 
+
 #Array
 
 allies = ["Bohemoths" , "Grunts" , "Redshirts" , "Scallywags"]
+
 
 #Dictionary
 
 artists = dict()
 artists = {"rap":"PDiddy", "rock":"Rage Against The Machine"}
-
-
-#Function
 
 
 #Print Statements
@@ -41,6 +41,7 @@ print "approximately " + str(minute1*minute2 ) + " minutes."
 print ""
 print "Seeming as you are " + str(2943-born) + " years old, you must use "
 print "your wisdom against the new generation of deadly robot machines."
+
 
 #If Statements
 
@@ -73,19 +74,27 @@ print "WARNING YOU HAVE ARRIVED AT THE ENEMY STRONGHLOD"
 fire_amount = int(raw_input("How many times do you wish to fire?  "))
 fire_damage= int(raw_input("How much damage do your rockets do? '1-20'  "))
 raw_input("Press ENTER to begin firing!!!")
+print ""
 
 i = 0
 while i<fire_amount:
 	print "-8-8-8-8-8-8-PEW-8-8-8-8-8-8-"
 	i = i+1
 
-def damageCaused():
+#Function
+
+def damageCaused(fire_amount, fire_damage):
 	total_damage = fire_amount * fire_damage
 	return total_damage
 
 dmg = damageCaused();
 
-print str(dmg)
+print ""
+print "You have destroyed " + str(dmg*1000) + " robots."
+print ""
+print "By destroying enough robots......."
+print "YOU HAVE SAVED THE EARTH!!!!!!"
+
 
 
 
